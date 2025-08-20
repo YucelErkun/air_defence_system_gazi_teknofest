@@ -1,0 +1,16 @@
+sim: true
+camera_id: 0
+pid:
+  kp: 0.5
+  ki: 0.1
+  kd: 0.2
+visualize: true
+safety:
+  lock_enabled: true
+  max_pan_speed_deg_s: 90
+  max_tilt_speed_deg_s: 60
+  safe_zones: []  # ekleyin: [[x1,y1,x2,y2], ...]
+detector:
+  conf_threshold: 0.45
+  use_color: true
+  use_motion: true
